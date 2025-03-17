@@ -24,6 +24,5 @@
   }
 
 :host ::ng-deep .p-button:hover {
-    background-color: #000; 
-    font-weight: bold;
+    background-color: #000!important; 
 }
