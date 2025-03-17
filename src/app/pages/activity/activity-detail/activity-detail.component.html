@@ -1,0 +1,40 @@
+<div class="activity-detail-container">  
+    <div class="activity-header">
+      <p class="activity-description">{{ activity.descripcion }}</p>
+    </div>
+  
+    <div class="activity-info">
+      <div class="info-item">
+        <i class="pi pi-calendar"></i>
+        <span><strong>Día:</strong> {{ activity.diaClase }}</span>
+      </div>
+      <div class="info-item">
+        <i class="pi pi-clock"></i>
+        <span><strong>Hora:</strong> {{ activity.horaClase }}</span>
+      </div>
+      <div class="info-item">
+        <i class="pi pi-user"></i>
+        <span><strong>Entrenador:</strong> {{ activity.trainer?.nombre }} {{ activity.trainer?.apellidos }}</span>
+      </div>
+    </div>
+  
+    <div class="members-section">
+      <h3>Socios Inscritos</h3>
+      <p-table [value]="activity.members" [paginator]="true" [rows]="5" [responsive]="true">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>DNI</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-member>
+          <tr>
+            <td>{{ member.nombre }}</td>
+            <td>{{ member.apellidos }}</td>
+            <td>{{ member.DNI }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+  </div>

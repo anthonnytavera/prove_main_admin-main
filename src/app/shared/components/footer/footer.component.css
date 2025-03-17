@@ -1,0 +1,17 @@
+footer {
+    background-color: #fff; 
+    padding: 40px; 
+    text-align: center; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+  
+footer .footer-content p:not(.copyright) {
+    display: none; 
+}
+  
+footer .footer-content .copyright {
+    font-size: 14px;
+    color: #000; 
+    margin: 0;
+}

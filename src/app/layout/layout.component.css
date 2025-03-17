@@ -1,0 +1,5 @@
+.layout-container {
+    min-height: 100vh; /* Ocupa al menos el 100% de la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+}

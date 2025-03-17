@@ -1,0 +1,108 @@
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+  
+.logo {
+    width: 35vw;
+    margin: 0 auto; 
+}
+  
+ 
+.menu-button {
+    background: none;
+    border: none;
+    color: #000;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    background: none;
+    box-shadow: none;
+}
+
+.menu-button:hover {
+    background: none;
+    color: #000 !important;
+    border: none !important;
+    background: none !important; 
+    box-shadow: none !important;
+}
+
+.menu-button .pi {
+    font-size: 28px;
+  }
+  
+.sidebar-content {
+    padding: 20px;
+    text-align: center;
+}
+  
+.sidebar-logo {
+    height: 60px; 
+    margin-bottom: 20px;
+}
+  
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    color: #000;
+}
+  
+.sidebar-menu li {
+    margin: 15px 0;
+}
+  
+.sidebar-menu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+  
+.sidebar-menu i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+  
+.spacer {
+    width: 48px; 
+}
+
+::ng-deep .p-drawer .p-drawer-header .p-drawer-title {
+    color: #000 !important;
+}
+
+.active-link {
+    background-color: #000; 
+    color: #fff !important; 
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+  
+.active-link i {
+    color: #fff !important;
+}
+  
+.active-link span {
+    color: #fff !important; 
+}
+  
+.active-link:hover {
+    background-color: #000;
+}
+  

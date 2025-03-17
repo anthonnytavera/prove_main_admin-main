@@ -1,0 +1,26 @@
+<div class="card-container">
+    <p-card [style]="{ width: '100%', overflow: 'hidden' }">
+        <ng-template #title>Activities</ng-template>
+        <img src="/assets/images/JARDIN-300x225.jpg" alt="Go Activities" class="imagen">
+        <p>
+            Review the activities list.
+        </p>
+        <ng-template #footer>
+        <div class="flex gap-4 mt-1">
+            <p-button label="Go" class="w-full" styleClass="w-full" routerLink="/activity" />
+        </div>
+        </ng-template>
+    </p-card>
+<p-card [style]="{ width: '100%', overflow: 'hidden' }">
+    <ng-template #title> Trainers </ng-template>
+    <img src="/assets/images/HEADER_WELCOME_TO_THE_CLUB-300x169.jpg" alt="Go Trainers" class="imagen">
+    <p>
+        Review the trainers list.
+    </p>
+    <ng-template #footer>
+    <div class="flex gap-4 mt-1">
+        <p-button label="Go" class="w-full" styleClass="w-full" routerLink="/trainer"/>
+    </div>
+    </ng-template>
+</p-card>
+</div>

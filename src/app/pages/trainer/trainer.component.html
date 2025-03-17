@@ -1,0 +1,26 @@
+<div class="trainers-container">
+    <h1>Entrenadores</h1>
+    <div class="trainers-grid">
+      <div *ngFor="let trainer of trainers" class="trainer-card">
+        <div class="trainer-header">
+          <h2>{{ trainer.nombre }} {{ trainer.apellidos }}</h2>
+          <p class="trainer-dni">{{ trainer.DNI }}</p>
+        </div>
+        <div class="trainer-body">
+          <p class="trainer-cv">{{ trainer.cv }}</p>
+          <h3>Actividades Asignadas</h3>
+          <ul class="activities-list">
+            <li *ngFor="let activityId of trainer.actividades" class="activity-item">
+              <span class="activity-name">{{ getActivityName(activityId) }}</span>
+              <select class="reassign-select" (change)="onReassignActivity(activityId, $event)">
+                <option value="">Reasignar a...</option>
+                <option *ngFor="let t of trainers" [value]="t.idTrainer">
+                  {{ t.nombre }} {{ t.apellidos }}
+                </option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>

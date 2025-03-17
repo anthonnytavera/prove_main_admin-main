@@ -1,0 +1,20 @@
+<div class="activities-section">
+    <h1>Activities</h1>
+    <div class="activities-container">
+        <div *ngFor="let activity of activities" class="actividad-card" (click)="seeDetail(activity)">
+        <img [src]="activity.imagen" alt="{{ activity.nombreActividadColectiva }}" class="actividad-imagen">
+        <div class="actividad-info">
+            <h3>{{ activity.nombreActividadColectiva }}</h3>
+            <p><strong>Día:</strong> {{ activity.diaClase }}</p>
+            <p><strong>Hora:</strong> {{ activity.horaClase }}</p>
+            <p><strong>Socios inscritos:</strong> {{ activity.sociosInscritos.length }}</p>
+            <p *ngIf="activity.trainer">
+            <strong>Entrenador:</strong> {{ activity.trainer.nombre }} {{ activity.trainer.apellidos }}
+            </p>
+            <p *ngIf="!activity.trainer">
+            <strong>Entrenador:</strong> No asignado
+            </p>
+        </div>
+        </div>
+    </div>
+</div>

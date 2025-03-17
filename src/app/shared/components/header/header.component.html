@@ -1,0 +1,24 @@
+<header>
+    <p-drawer header="Menu" [(visible)]="sidebarVisible" position="left" [baseZIndex]="10000">
+      <div class="sidebar-content">
+        <ul class="sidebar-menu">
+          <li *ngFor="let item of items">
+            <a [routerLink]="item.routerLink" routerLinkActive="active-link" (click)="closeDrawer()">
+              <i [class]="item.icon"></i>
+              <span>{{ item.label }}</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </p-drawer>
+  
+    <div class="header-container">
+      <button pButton type="button"  (click)="sidebarVisible = true" class="menu-button">
+        <span class="pi pi-bars"></span>
+      </button>
+  
+      <img src="assets/logo.png" alt="Logo Metropolitan" class="logo" />
+  
+      <div class="spacer"></div>
+    </div>
+  </header>
